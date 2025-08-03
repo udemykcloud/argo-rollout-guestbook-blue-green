@@ -32,9 +32,6 @@ spec:
       activeService: guestbook-ui
       previewService: guestbook-ui-canary
       autoPromotionEnabled: false
-      prePromotionAnalysis:
-        templates:
-          - templateName: health-check
       scaleDownDelaySeconds: 300
 ---
 apiVersion: v1
