@@ -31,7 +31,7 @@ spec:
   strategy:
     blueGreen:
       activeService: guestbook-ui
-      previewService: guestbook-ui-canary
+      previewService: guestbook-ui-blue-green
       autoPromotionEnabled: false
       scaleDownDelaySeconds: 300
 ---
@@ -50,7 +50,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: guestbook-ui-canary
+  name: guestbook-ui-blue-green
   namespace: default
 spec:
   ports:
