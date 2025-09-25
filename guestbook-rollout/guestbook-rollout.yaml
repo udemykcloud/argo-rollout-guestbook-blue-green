@@ -73,6 +73,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: guestbook-ui
+                name: guestbook-ui-canary
                 port:
                   number: 80
